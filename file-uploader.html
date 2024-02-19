@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Drag and Drop Plugin</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="file-uploader.css">
+</head>
+
+<body>
+
+  <div id="fileUploader" class="file-uploader"></div>
+
+  <script src="file-uploader.js"></script>
+  <script>
+    // Initialize the uploader
+    const fileUploaderArea = document.getElementById('fileUploader');
+    const FUArea = new FileUploader(fileUploaderArea, {
+      multifiles: true,
+      maxFiles: 20,
+      allowedTypes: ['image', 'pdf'],
+      excludedTypes: ['exe', 'sh'],
+      maxSize: "10 mb",
+      errorTimeout: 5000,
+    });
+
+  </script>
+
+</body>
+
+</html>

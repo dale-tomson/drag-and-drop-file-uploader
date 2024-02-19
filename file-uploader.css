@@ -1,0 +1,100 @@
+.file-uploader {
+    border: 2px dashed #ccc;
+    max-height: 350px;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+  }
+
+  .file-uploader .drop-area {
+    width: 100%;
+    max-height: 250px !important;
+    overflow-y: auto;
+    text-align: center;
+    cursor: pointer;
+    padding: 0 0 20px 10px;
+  }
+
+  .file-uploader .drop-area.highlight {
+    background-color: #e0e0e0;
+    border: 1px dashed #ccc;
+  }
+
+  .file-uploader .file-preview {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+  }
+
+  .file-uploader .file-item {
+    width: 150px;
+    height: 150px;
+    background-color: #f0f0f0;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    position: relative;
+  }
+
+  .file-uploader .file-item img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .file-uploader .progress-bar {
+    width: 100%;
+    height: 10px;
+    background-color: #ddd;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+
+  .file-uploader .progress-bar-fill {
+    height: 100%;
+    background-color: #4caf50;
+    border-radius: 5px;
+    width: 10%;
+  }
+
+  .file-uploader #upload-btn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+
+  .file-uploader #upload-btn:hover {
+    background-color: #45a049;
+  }
+
+  .file-uploader .error-message {
+    position: absolute;
+    top: 2%;
+    background: #f97878;
+    color: #ffffff;
+    padding: 15px;
+    right: 5%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+
+  .file-uploader .file-item .remove-button {
+    position: absolute;
+    top: -12px;
+    right: -12px;
+    background-color: #f97878;
+    color: #ffffff;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+  }
